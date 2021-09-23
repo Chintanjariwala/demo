@@ -15,7 +15,7 @@ public class UrlCheckContoller {
     private final String SITE_IS_DOWN = "Site is down!";
     private final String INCORRECT_URL = "URL is incorrect!";
 
-    @GetMapping("/check")
+    @GetMapping("/check1")
     public String getUtlStatusMessage(@RequestParam(required = false) String url){
         try {
             URL urlObj = new URL(url);
